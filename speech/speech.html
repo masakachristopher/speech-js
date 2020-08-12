@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="speech.css">
+	<title>speech recognition</title>
+</head>
+<body>
+  <div class="div-center">
+      <p class="p-font">Pick Your language</p>
+      <select class="select-center" id="languages" onchange="selectLanguage(this)">
+        <!-- <option value="">select One language</option> -->
+        <option value="en-US">English US</option>
+        <option value="es-ES">Español</option>
+        <option value="zh-CN">Chinese</option>
+        <option value="fr=FR">Français</option>
+      </select>
+
+  </div>
+	<div class="container">
+    
+        <p>
+          <a onclick="startSpeaking()" class="header-title" linkText="SPEECH RECOGNITION">
+            <span>SPEECH RECOGNITION</span>
+          </a> 
+        </p>
+      
+        <button onclick="startSpeaking()" >
+          START SPEAKING
+        </button>
+        <p id="listeningStatus"></p> 
+        <p id="resultElement">CLICK ON THE BUTTON</p>
+      
+      
+	</div>
+
+	<script type="text/javascript" src="speech.js"></script> 
+</body>
+</html>
